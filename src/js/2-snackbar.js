@@ -27,13 +27,11 @@ function onFormSnackbarSubmit(event) {
   promise
     .then(ms => {
       iziToast.show({
-        title: 'Fulfilled',
         message: `✅ Fulfilled promise in ${ms}ms`,
       });
     })
     .catch(ms => {
       iziToast.error({
-        title: 'Rejected',
         message: `❌ Rejected promise in ${ms}ms`,
       });
     });
